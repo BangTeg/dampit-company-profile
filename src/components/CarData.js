@@ -2,7 +2,7 @@ import Avanza from "../images/cars-big/avanza.png";
 import Innova from "../images/cars-big/innova.png";
 import HiaceCommuter from "../images/cars-big/hiacecommuter.png";
 import HiacePremio from "../images/cars-big/hiacepremio.png";
-import ElfLong from "../images/cars-big/elflong.png";
+import ElfLong from "../images/cars-big/elflong.jpg";
 import BusMedium from "../images/cars-big/busmedium.png";
 import BigBus from "../images/cars-big/bigbus.png";
 
