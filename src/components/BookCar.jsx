@@ -474,23 +474,27 @@ function BookCar() {
 						</div>
 
 						<div className="booking-modal__car-info__dates">
-							<span>
-								<IconMapPinFilled />
-								<div>
-									<h6>Pick-Up Location</h6>
-									<p>{pickUp}</p>
+							<div className="flex flex-col items-center justify-center">
+								<div className="flex gap-3 items-center">
+									<IconMapPinFilled />
+									<h6 className="text-2xl">Pick-Up Location</h6>
 								</div>
-							</span>
+								<div>
+									<p className="mt-3 text-xl">{pickUp}</p>
+								</div>
+							</div>
 						</div>
 
 						<div className="booking-modal__car-info__dates">
-							<span>
-								<IconMapPinFilled />
-								<div>
-									<h6>Drop-Off Location</h6>
-									<p>{dropOff}</p>
+							<div className="flex flex-col items-center justify-center">
+								<div className="flex gap-3 items-center">
+									<IconMapPinFilled />
+									<h6 className="text-2xl">Drop-Off Location</h6>
 								</div>
-							</span>
+								<div>
+									<p className="mt-3 text-xl">{dropOff}</p>
+								</div>
+							</div>
 						</div>
 						<div className="booking-modal__car-info__dates">
 							<span>
