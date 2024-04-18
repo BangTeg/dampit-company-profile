@@ -650,7 +650,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 83rem;
-	height: fit-content;
+	height: 800px !important;
 	border: 2px solid white;
 	background-color: rgb(255, 255, 255);
 	padding-right: 2px;

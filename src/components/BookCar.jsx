@@ -474,25 +474,29 @@ function BookCar() {
 						</div>
 
 						<div className="booking-modal__car-info__dates">
-							<div className="flex flex-col items-center justify-center">
+							<div className="flex flex-col justify-center max-sm:items-center">
 								<div className="flex gap-3 items-center">
 									<IconMapPinFilled />
 									<h6 className="text-2xl">Pick-Up Location</h6>
 								</div>
 								<div>
-									<p className="mt-3 text-xl">{pickUp}</p>
+									<p className="mt-3 text-xl text-[#777777] md:text-2xl">
+										{pickUp}
+									</p>
 								</div>
 							</div>
 						</div>
 
 						<div className="booking-modal__car-info__dates">
-							<div className="flex flex-col items-center justify-center">
+							<div className="flex flex-col justify-center max-sm:items-center">
 								<div className="flex gap-3 items-center">
 									<IconMapPinFilled />
 									<h6 className="text-2xl">Drop-Off Location</h6>
 								</div>
 								<div>
-									<p className="mt-3 text-xl">{dropOff}</p>
+									<p className="mt-3 text-xl text-[#777777] md:text-2xl">
+										{dropOff}
+									</p>
 								</div>
 							</div>
 						</div>
