@@ -646,11 +646,11 @@ body {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	z-index: 999999999999;
-	top: 54%;
+	top: 52%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 83rem;
-	height: 800px !important;
+	width: 90rem;
+	height: 700px !important;
 	border: 2px solid white;
 	background-color: rgb(255, 255, 255);
 	padding-right: 2px;
@@ -666,7 +666,7 @@ body {
 
 @media (max-width: 600px) {
 	.booking-modal {
-		top: 50%;
+		top: 52%;
 	}
 }
 
@@ -915,14 +915,16 @@ body {
 	color: white;
 	font-weight: 700;
 	background-color: #eb455f;
-	border: 1px solid yellow;
+	border: 1px solid white;
 	padding: 1.2rem 2rem;
 	cursor: pointer;
 	transition: all 0.2s;
 }
 
 .reserve-button button:hover {
-	background-color: #fe3516;
+	background-color: white;
+	color: #eb455f;
+	border: 1px solid black;
 }
 
 .dates-div {

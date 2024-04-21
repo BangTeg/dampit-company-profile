@@ -441,8 +441,7 @@ function BookCar() {
 						you will receive:
 					</h4>
 					<p>
-						Your rental voucher to produce on arrival at the rental desk and a
-						toll-free customer support number.
+						A validation of your reservation will be sended by WhatsApp chat within 24 hours, and after that you will receive an email with the reservation details and status of your reservation.
 					</p>
 				</div>
 				{/* car info */}
