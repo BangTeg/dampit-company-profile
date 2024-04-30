@@ -32,7 +32,7 @@ const ModalDelete = ({ navigate, id, refetch }) => {
 		{
 			onSuccess: (data) => {
 				toast({
-					title: "Berhasil Menghapus Data",
+					title: "Success Delete Data",
 					description: data.message,
 					status: "success",
 				});
@@ -40,8 +40,8 @@ const ModalDelete = ({ navigate, id, refetch }) => {
 			},
 			onError: (error) => {
 				toast({
-					title: "Gagal Menghapus Data",
-					description: "Terjadi kesalahan saat menghapus data",
+					title: "Failed Delete Data",
+					description: "An error occurred while deleting data",
 					status: "error",
 				});
 			},
@@ -79,12 +79,12 @@ const ModalDelete = ({ navigate, id, refetch }) => {
 				</DropdownMenuContent>
 				<DialogContent className="sm:max-w-[425px]">
 					<DialogHeader>
-						<DialogTitle>Hapus Data</DialogTitle>
+						<DialogTitle>Delete Data</DialogTitle>
 					</DialogHeader>
 					<div className="flex flex-col items-center justify-center gap-3">
 						<AlertTriangleIcon className="w-16 h-16 text-red-500" />
 						<p className="text-md text-center">
-							Kamu tidak akan bisa mengembalikan data yang telah dihapus.
+							Are you sure you want to delete this data? This action cannot be undone and you will lose all data related to this data.
 						</p>
 					</div>
 					<DialogFooter>

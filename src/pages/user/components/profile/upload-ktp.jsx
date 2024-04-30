@@ -42,7 +42,7 @@ const UploadKTP = ({ avatarUrl, refetch }) => {
 		{
 			onSuccess: (data) => {
 				toast({
-					title: "Success",
+					title: "Success upload KTP",
 					description: data.message,
 					status: "success",
 				});
@@ -52,7 +52,7 @@ const UploadKTP = ({ avatarUrl, refetch }) => {
 			onError: (error) => {
 				toast({
 					title: "Error",
-					description: "Gagal upload avatar",
+					description: "Failed to upload KTP",
 					status: "error",
 				});
 			},

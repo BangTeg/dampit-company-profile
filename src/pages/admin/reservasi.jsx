@@ -34,6 +34,7 @@ import Pagination from "rc-pagination";
 import useSearchParams from "@/hook/useSearchParams";
 
 const Reservasi = () => {
+	moment.locale("en");
 	const navigate = useNavigate();
 	const [sorting, setSorting] = useState([]);
 	const PAGE_SIZE = 5;
@@ -250,6 +251,7 @@ const Reservasi = () => {
 								total={data?.data.totalRows}
 								pageSize={PAGE_SIZE}
 								onChange={(page) => onPageChange(page)}
+								locale={"id-ID"}
 							/>
 						</div>
 					</div>

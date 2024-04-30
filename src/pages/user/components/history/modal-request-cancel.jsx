@@ -32,7 +32,7 @@ const ModalRequestCancel = ({ navigate, id, refetch }) => {
 		{
 			onSuccess: (data) => {
 				toast({
-					title: `Berhasil membatalkan transaksi ${id}`,
+					title: `Successfully canceled the transaction ${id}`,
 					description: data.message,
 					status: "success",
 				});
@@ -42,7 +42,7 @@ const ModalRequestCancel = ({ navigate, id, refetch }) => {
 			onError: (error) => {
 				console.log(error);
 				toast({
-					title: `Gagal membatalkan transaksi ${id}`,
+					title: `Failed to cancel transaction ${id}`,
 					description: error.response.data.error,
 					status: "error",
 				});
@@ -81,12 +81,12 @@ const ModalRequestCancel = ({ navigate, id, refetch }) => {
 				</DropdownMenuContent>
 				<DialogContent className="sm:max-w-[425px]">
 					<DialogHeader>
-						<DialogTitle>Hapus Data</DialogTitle>
+						<DialogTitle>Delete Data</DialogTitle>
 					</DialogHeader>
 					<div className="flex flex-col items-center justify-center gap-3">
 						<AlertTriangleIcon className="w-16 h-16 text-red-500" />
 						<p className="text-md text-center">
-							Apakah Anda yakin ingin membatalkan transaksi ini?
+							Are you sure you want to cancel the transaction?
 						</p>
 					</div>
 					<DialogFooter>
@@ -98,7 +98,7 @@ const ModalRequestCancel = ({ navigate, id, refetch }) => {
 							{isLoading && (
 								<LoaderIcon className="mr-2 w-4 h-4 animate-spin" />
 							)}
-							Ya
+							Yes
 						</Button>
 					</DialogFooter>
 				</DialogContent>

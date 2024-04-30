@@ -61,7 +61,7 @@ const UserProfile = () => {
 			onError: (error) => {
 				toast({
 					title: "Error Updating Profile",
-					description: "Opps! Something went wrong. Please try again later",
+					description: "Oops! Something went wrong. Please try again later",
 					status: "error",
 				});
 			},

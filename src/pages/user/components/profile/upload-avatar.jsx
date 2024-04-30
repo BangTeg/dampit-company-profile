@@ -42,7 +42,7 @@ const UploadAvatar = ({ avatarUrl, refetch }) => {
 		{
 			onSuccess: (data) => {
 				toast({
-					title: "Sukses Upload Avatar",
+					title: "Success upload avatar",
 					descsription: data.message,
 					type: "success",
 				});
@@ -52,7 +52,7 @@ const UploadAvatar = ({ avatarUrl, refetch }) => {
 			onError: (error) => {
 				toast({
 					title: "Error",
-					descsription: "Gagal upload avatar",
+					descsription: "Failed to upload avatar",
 					type: "error",
 				});
 			},

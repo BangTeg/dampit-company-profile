@@ -61,6 +61,7 @@ const Dashboard = () => {
 	return (
 		<div>
 			<AuthenticatedLayout>
+			{/* Dashboard data get from backend response */}
 				{isLoading ? (
 					<div className="">Loading</div>
 				) : (

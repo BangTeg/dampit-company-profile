@@ -33,7 +33,7 @@ import Pagination from "rc-pagination";
 import useSearchParams from "@/hook/useSearchParams";
 
 const History = () => {
-	moment.locale("id");
+	moment.locale("en");
 	const navigate = useNavigate();
 	const [sorting, setSorting] = useState([]);
 	const PAGE_SIZE = 5;
@@ -241,6 +241,7 @@ const History = () => {
 							pageSize={PAGE_SIZE}
 							onChange={(page) => onPageChange(page)}
 							className="flex justify-center py-4"
+							locale={"id-ID"}
 						/>
 					</div>
 				</div>

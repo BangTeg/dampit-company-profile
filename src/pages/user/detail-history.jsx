@@ -33,14 +33,14 @@ const DetailHistory = () => {
 				<MoveLeft />
 				Back
 			</div>
-			<h1 className="text-2xl font-semibold">Detail Transaksi</h1>
+			<h1 className="text-2xl font-semibold">Transaction Detail</h1>
 			<div className="grid grid-cols-1 xl:grid-cols-2 gap-10 mt-5">
 				<div>
-					<h2 className="text-xl font-semibold">Informasi Pemesan</h2>
+					<h2 className="text-xl font-semibold">Customer</h2>
 					<Separator className="my-3" />
 					<div className="grid grid-cols-2 gap-3">
 						<div>
-							<p className="text-sm text-gray-500">Nama</p>
+							<p className="text-sm text-gray-500">Name</p>
 							<p className="text-lg">
 								{result?.Users.firstName} {result?.Users.lastName}
 							</p>
@@ -50,15 +50,15 @@ const DetailHistory = () => {
 							<p className="text-lg">{result?.Users.email}</p>
 						</div>
 						<div>
-							<p className="text-sm text-gray-500">Kontak</p>
+							<p className="text-sm text-gray-500">Contact</p>
 							<p className="text-lg">{result?.Users.contact}</p>
 						</div>
 						<div>
-							<p className="text-sm text-gray-500">Alamat</p>
+							<p className="text-sm text-gray-500">Address</p>
 							<p className="text-lg">{result?.Users.address}</p>
 						</div>
 						<div>
-							<p className="text-sm text-gray-500">KTP</p>
+							<p className="text-sm text-gray-500">KTP (Identity Card)</p>
 							<img
 								src={result?.Users.ktp ?? "https://github.com/shadcn.png"}
 								className="w-64 h-fit"
@@ -68,39 +68,39 @@ const DetailHistory = () => {
 					</div>
 				</div>
 				<div>
-					<h2 className="text-xl font-semibold">Informasi Reservasi</h2>
+					<h2 className="text-xl font-semibold">Reservation</h2>
 					<Separator className="my-3" />
 					<div className="grid grid-cols-2 gap-3">
 						<div>
-							<p className="text-sm text-gray-500">Tanggal Reservasi</p>
+							<p className="text-sm text-gray-500">Pick Date</p>
 							<p className="text-lg">
 								{moment(result?.pickDate).format("dddd, Do MMMM YYYY, HH:mm")}
 							</p>
 						</div>
 						<div>
-							<p className="text-sm text-gray-500">Tanggal Selesai Reservasi</p>
+							<p className="text-sm text-gray-500">Drop Date</p>
 							<p className="text-lg">
 								{moment(result?.dropDate).format("dddd, Do MMMM YYYY, HH:mm")}
 							</p>
 						</div>
 						<div>
-							<p className="text-sm text-gray-500">Lokasi Penjemputan</p>
+							<p className="text-sm text-gray-500">Pick Up Location</p>
 							<p className="text-lg">{result?.pickUp}</p>
 						</div>
 						<div>
-							<p className="text-sm text-gray-500">Lokasi Pengembalian</p>
+							<p className="text-sm text-gray-500">Drop Off Location</p>
 							<p className="text-lg">{result?.dropOff}</p>
 						</div>
 						<div>
-							<p className="text-sm text-gray-500">Unit</p>
+							<p className="text-sm text-gray-500">Unit(s)</p>
 							<p className="text-lg">{result?.unit}</p>
 						</div>
 						<div>
-							<p className="text-sm text-gray-500">Penumpang</p>
+							<p className="text-sm text-gray-500">Passenger</p>
 							<p className="text-lg">{result?.passengers}</p>
 						</div>
 						<div>
-							<p className="text-sm text-gray-500">Kendaraan</p>
+							<p className="text-sm text-gray-500">Car Type</p>
 							<p className="text-lg">{result?.Vehicles.name}</p>
 						</div>
 						<div>
@@ -109,7 +109,7 @@ const DetailHistory = () => {
 						</div>
 
 						<div>
-							<p className="text-sm text-gray-500">Total Pembayaran</p>
+							<p className="text-sm text-gray-500">Total Payment</p>
 							<p className="text-lg font-semibold">
 								{new Intl.NumberFormat("id-ID", {
 									style: "currency",
@@ -144,7 +144,7 @@ const DetailHistory = () => {
 								<Separator className="col-span-2 my-3" />
 								<div />
 								<div>
-									<p className="text-sm text-gray-500">Total Pembayaran</p>
+									<p className="text-sm text-gray-500">Total Payment (Overtime)</p>
 									<p className="text-lg font-semibold">
 										{new Intl.NumberFormat("id-ID", {
 											style: "currency",
