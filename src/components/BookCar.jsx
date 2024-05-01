@@ -195,7 +195,7 @@ function BookCar() {
 			},
 			onError: (error) => {
 				console.log(error);
-				alert("Failed to book a car");
+				alert(error.response.data.error || "Failed to book a car");
 			},
 		}
 	);
