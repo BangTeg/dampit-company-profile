@@ -73,16 +73,16 @@ const Dashboard = () => {
 							<div className="bg-white p-5 rounded-md shadow-md flex items-center justify-between ">
 								<div className="flex-1 mr-10">
 									<h1 className="text-lg font-semibold mb-3">
-										Total Revenue
+										Total Revenue <br></br><span className="text-xs">{month && year && `(${MONTHS[month - 1]} ${year})`}</span>
 									</h1>
 									<div className="flex gap-3 mb-3">
 										<Select onValueChange={onMonthChange}>
 											<SelectTrigger className="w-full">
-												<SelectValue placeholder="Select Month" />
+												<SelectValue placeholder="Month" />
 											</SelectTrigger>
 											<SelectContent>
 												<SelectGroup>
-													<SelectLabel>Select Month</SelectLabel>
+													<SelectLabel>Month</SelectLabel>
 													<SelectItem value="all">All</SelectItem>
 													{MONTHS.map((month, index) => (
 														<SelectItem key={index} value={index + 1}>
@@ -94,11 +94,11 @@ const Dashboard = () => {
 										</Select>
 										<Select onValueChange={onYearChange}>
 											<SelectTrigger className="w-full">
-												<SelectValue placeholder="Select Year" />
+												<SelectValue placeholder="Year" />
 											</SelectTrigger>
 											<SelectContent>
 												<SelectGroup>
-													<SelectLabel>Select Year</SelectLabel>
+													<SelectLabel>Year</SelectLabel>
 													<SelectItem value="all">All</SelectItem>
 													{YEARS.map((year, index) => (
 														<SelectItem key={index} value={year}>

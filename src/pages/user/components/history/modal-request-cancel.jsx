@@ -81,7 +81,7 @@ const ModalRequestCancel = ({ navigate, id, refetch }) => {
 				</DropdownMenuContent>
 				<DialogContent className="sm:max-w-[425px]">
 					<DialogHeader>
-						<DialogTitle>Delete Data</DialogTitle>
+						<DialogTitle>Cancel Reservation</DialogTitle>
 					</DialogHeader>
 					<div className="flex flex-col items-center justify-center gap-3">
 						<AlertTriangleIcon className="w-16 h-16 text-red-500" />
