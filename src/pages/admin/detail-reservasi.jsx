@@ -274,7 +274,6 @@ const DetailReservasi = () => {
 											<SelectContent>
 												<SelectGroup>
 													<SelectItem value="approved">Approved</SelectItem>
-													<SelectItem value="cancelled">Cancelled</SelectItem>
 													<SelectItem value="finished">Finished</SelectItem>
 													<SelectItem value="rejected">Rejected</SelectItem>
 												</SelectGroup>
